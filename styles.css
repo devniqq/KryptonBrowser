@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="KryptonBrowser — a secure, privacy-focused browser for Windows, Linux, macOS, Android, and iOS."
+    />
+    <title>KryptonBrowser | Secure Browser</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">K</div>
+          <div class="brand-text">KryptonBrowser</div>
+        </div>
+        <nav class="nav">
+          <a href="#features">Features</a>
+          <a href="#security">Security</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#download">Download</a>
+        </nav>
+        <a class="nav-button" href="#download">Get Krypton</a>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Secure by design · Fast by default</p>
+            <h1>Browse the web with more privacy, more speed, and less noise.</h1>
+            <p class="lead">
+              KryptonBrowser blends the familiar efficiency of Chrome with the speed and elegance of Opera,
+              while adding stronger privacy controls, smarter resource usage, and a cleaner, safer experience.
+            </p>
+            <div class="cta-row">
+              <a class="primary-btn" href="#download">Download now</a>
+              <a class="secondary-btn" href="#features">Explore features</a>
+            </div>
+            <ul class="hero-meta">
+              <li>Built for Windows, Linux, macOS</li>
+              <li>Android and iOS ready</li>
+              <li>Privacy-focused by default</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual">
+            <div class="browser-window">
+              <div class="window-bar">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="tab-row">
+                <div class="tab active">Krypton</div>
+                <div class="tab">News</div>
+                <div class="tab">Drive</div>
+              </div>
+              <div class="browser-content">
+                <div class="address-bar">kryptonbrowser.com/private</div>
+                <div class="page-grid">
+                  <div class="card large">
+                    <span class="chip">Private Mode</span>
+                    <h3>Zero-track browsing</h3>
+                    <p>Enhanced anti-tracking, ad shielding, and cleaner page rendering.</p>
+                  </div>
+                  <div class="card">
+                    <span class="mini-label">Protection</span>
+                    <strong>99.2%</strong>
+                    <small>Threat blocking</small>
+                  </div>
+                  <div class="card">
+                    <span class="mini-label">Speed</span>
+                    <strong>1.9x</strong>
+                    <small>Less clutter</small>
+                  </div>
+                  <div class="card wide">
+                    <span class="mini-label">Sync</span>
+                    <strong>Secure cross-device</strong>
+                    <small>Windows, Linux, macOS, Android, iOS</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature-band" id="features">
+          <div class="section-heading">
+            <p class="eyebrow">Why KryptonBrowser</p>
+            <h2>Everything you need for smarter, safer browsing.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">🛡️</div>
+              <h3>Built-in privacy shield</h3>
+              <p>Ad blocking, tracking protection, fingerprint reduction, and smarter cookie controls.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Fast and lightweight</h3>
+              <p>Optimized tab handling, quick rendering, and low resource consumption on every device.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🧠</div>
+              <h3>Smart browsing assistant</h3>
+              <p>Context-aware suggestions, quick searches, and streamlined productivity workflows.</p>
+            </article>
+            <article class="feature-card">
+              <div class="icon">🔒</div>
+              <h3>Secure sync</h3>
+              <p>End-to-end encrypted sync for bookmarks, passwords, history, and settings.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="security-section" id="security">
+          <div class="section-heading left">
+            <p class="eyebrow">Security stack</p>
+            <h2>Protection that stays active, even when you forget.</h2>
+          </div>
+
+          <div class="security-grid">
+            <div class="security-panel">
+              <h3>Active defense</h3>
+              <ul>
+                <li>HTTPS-first browsing</li>
+                <li>Phishing and malware detection</li>
+                <li>Suspicious extension monitoring</li>
+                <li>Context-aware sandboxing</li>
+              </ul>
+            </div>
+            <div class="security-panel highlight">
+              <h3>Privacy engine</h3>
+              <ul>
+                <li>Tracker blocking by default</li>
+                <li>Third-party cookie isolation</li>
+                <li>Private browsing strengthen mode</li>
+                <li>Session data minimization</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="platforms" id="platforms">
+          <div class="section-heading">
+            <p class="eyebrow">Cross-platform</p>
+            <h2>One browser experience across every device.</h2>
+          </div>
+
+          <div class="platform-grid">
+            <div class="platform-item"><span>🪟</span> Windows</div>
+            <div class="platform-item"><span>🐧</span> Linux</div>
+            <div class="platform-item"><span>🍎</span> macOS</div>
+            <div class="platform-item"><span>🤖</span> Android</div>
+            <div class="platform-item"><span>📱</span> iOS</div>
+          </div>
+        </section>
+
+        <section class="download-section" id="download">
+          <div class="section-heading">
+            <p class="eyebrow">Download</p>
+            <h2>Install KryptonBrowser on your platform.</h2>
+          </div>
+
+          <div class="download-grid">
+            <a class="download-card" href="#">
+              <span class="os">🪟 Windows</span>
+              <strong>Download .exe</strong>
+              <small>64-bit installer</small>
+            </a>
+            <a class="download-card" href="#">
+              <span class="os">🐧 Linux</span>
+              <strong>Download .AppImage</strong>
+              <small>Debian / Ubuntu / Fedora</small>
+            </a>
+            <a class="download-card" href="#">
+              <span class="os">🍎 macOS</span>
+              <strong>Download .dmg</strong>
+              <small>Apple Silicon + Intel</small>
+            </a>
+            <a class="download-card" href="#">
+              <span class="os">🤖 Android</span>
+              <strong>Google Play</strong>
+              <small>Coming soon</small>
+            </a>
+            <a class="download-card" href="#">
+              <span class="os">📱 iOS</span>
+              <strong>App Store</strong>
+              <small>Coming soon</small>
+            </a>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div>KryptonBrowser</div>
+        <div>Secure browsing for modern life.</div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const navButton = document.querySelector('.nav-button');
+  const primaryButtons = document.querySelectorAll('.primary-btn, .nav-button');
+
+  primaryButtons.forEach((button) => {
+    button.addEventListener('mouseenter', () => {
+      button.style.filter = 'brightness(1.04)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.style.filter = 'none';
+    });
+  });
+
+  if (navButton) {
+    navButton.setAttribute('aria-label', 'Download KryptonBrowser');
+  }
+});
