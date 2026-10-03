@@ -1,0 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.btn');
+  buttons.forEach((button) => {
+    button.addEventListener('mouseenter', () => {
+      button.style.filter = 'brightness(1.04)';
+    });
+
+    button.addEventListener('mouseleave', () => {
+      button.style.filter = 'none';
+    });
+  });
+
+  const cards = document.querySelectorAll('.feature-card, .compare-card, .pricing-card, .download-card, .security-card, .platform-item');
+  cards.forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      card.style.borderColor = 'rgba(103, 166, 255, 0.36)';
+      card.style.boxShadow = '0 18px 34px rgba(8, 15, 24, 0.38)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.borderColor = 'rgba(160, 188, 236, 0.18)';
+      card.style.boxShadow = 'none';
+    });
+  });
+});
+
+
+
+
+
