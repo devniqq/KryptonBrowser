@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="KryptonBrowser — a secure, privacy-focused browser for Windows, Linux, macOS, Android, and iOS."
+      content="KryptonBrowser is a secure, fast, privacy-first browser concept built for Windows, Linux, macOS, Android, and iOS."
     />
-    <title>KryptonBrowser | Secure Browser</title>
+    <title>KryptonBrowser | Privacy-First Browser</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,196 +17,246 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand-wrap">
-          <div class="brand-mark">K</div>
-          <div class="brand-text">KryptonBrowser</div>
+    <div class="noise"></div>
+
+    <header class="topbar">
+      <div class="brand-wrap">
+        <div class="brand-mark">K</div>
+        <div class="brand-copy">
+          <span class="brand-name">KryptonBrowser</span>
+          <span class="brand-tag">Secure web experience</span>
         </div>
-        <nav class="nav">
-          <a href="#features">Features</a>
-          <a href="#security">Security</a>
-          <a href="#platforms">Platforms</a>
-          <a href="#download">Download</a>
-        </nav>
-        <a class="nav-button" href="#download">Get Krypton</a>
-      </header>
+      </div>
 
-      <main>
-        <section class="hero">
-          <div class="hero-copy">
-            <p class="eyebrow">Secure by design · Fast by default</p>
-            <h1>Browse the web with more privacy, more speed, and less noise.</h1>
-            <p class="lead">
-              KryptonBrowser blends the familiar efficiency of Chrome with the speed and elegance of Opera,
-              while adding stronger privacy controls, smarter resource usage, and a cleaner, safer experience.
-            </p>
-            <div class="cta-row">
-              <a class="primary-btn" href="#download">Download now</a>
-              <a class="secondary-btn" href="#features">Explore features</a>
-            </div>
-            <ul class="hero-meta">
-              <li>Built for Windows, Linux, macOS</li>
-              <li>Android and iOS ready</li>
-              <li>Privacy-focused by default</li>
-            </ul>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#security">Security</a>
+        <a href="#compare">Compare</a>
+        <a href="#download">Download</a>
+      </nav>
+
+      <a class="nav-button" href="#download">Get Krypton</a>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Built for speed. Protected by design.</p>
+          <h1>Privacy-first browsing for a cleaner, smarter internet.</h1>
+          <p class="lead">
+            KryptonBrowser blends the familiarity of Chrome with the polish and speed of Opera,
+            adding stronger privacy controls, smarter tab management, and a safer all-around product experience.
+          </p>
+
+          <div class="cta-row">
+            <a class="primary-btn" href="#download">Download Now</a>
+            <a class="secondary-btn" href="#features">See Features</a>
           </div>
 
-          <div class="hero-visual">
-            <div class="browser-window">
-              <div class="window-bar">
-                <span class="dot red"></span>
-                <span class="dot yellow"></span>
-                <span class="dot green"></span>
+          <div class="stat-row">
+            <div>
+              <strong>99.2%</strong>
+              <span>Malware blocking</span>
+            </div>
+            <div>
+              <strong>1.9x</strong>
+              <span>Faster tab flow</span>
+            </div>
+            <div>
+              <strong>5 OS</strong>
+              <span>Platform coverage</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="KryptonBrowser UI mockup">
+          <div class="browser-shell">
+            <div class="browser-topbar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+
+            <div class="browser-tabs">
+              <span class="tab active">Krypton</span>
+              <span class="tab">News</span>
+              <span class="tab">Cloud</span>
+            </div>
+
+            <div class="urlbar">kryptonbrowser.com/private</div>
+
+            <div class="dashboard-grid">
+              <div class="panel panel-main">
+                <span class="panel-badge">Private Mode</span>
+                <h3>Zero-track browsing</h3>
+                <p>Cleaner pages, less tracking, more control over what follows you online.</p>
               </div>
-              <div class="tab-row">
-                <div class="tab active">Krypton</div>
-                <div class="tab">News</div>
-                <div class="tab">Drive</div>
+
+              <div class="mini-panel">
+                <span>Protection</span>
+                <strong>24/7</strong>
+                <small>Threat watch</small>
               </div>
-              <div class="browser-content">
-                <div class="address-bar">kryptonbrowser.com/private</div>
-                <div class="page-grid">
-                  <div class="card large">
-                    <span class="chip">Private Mode</span>
-                    <h3>Zero-track browsing</h3>
-                    <p>Enhanced anti-tracking, ad shielding, and cleaner page rendering.</p>
-                  </div>
-                  <div class="card">
-                    <span class="mini-label">Protection</span>
-                    <strong>99.2%</strong>
-                    <small>Threat blocking</small>
-                  </div>
-                  <div class="card">
-                    <span class="mini-label">Speed</span>
-                    <strong>1.9x</strong>
-                    <small>Less clutter</small>
-                  </div>
-                  <div class="card wide">
-                    <span class="mini-label">Sync</span>
-                    <strong>Secure cross-device</strong>
-                    <small>Windows, Linux, macOS, Android, iOS</small>
-                  </div>
-                </div>
+
+              <div class="mini-panel">
+                <span>Speed</span>
+                <strong>1.9x</strong>
+                <small>Low-latency flow</small>
+              </div>
+
+              <div class="panel panel-wide">
+                <span>Secure sync</span>
+                <strong>Cross-device privacy</strong>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="feature-band" id="features">
+      <section class="feature-band" id="features">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Why KryptonBrowser</p>
-            <h2>Everything you need for smarter, safer browsing.</h2>
+            <p class="eyebrow">Why Krypton</p>
+            <h2>Everything you need for a safer, smoother internet.</h2>
           </div>
 
           <div class="feature-grid">
             <article class="feature-card">
-              <div class="icon">🛡️</div>
-              <h3>Built-in privacy shield</h3>
-              <p>Ad blocking, tracking protection, fingerprint reduction, and smarter cookie controls.</p>
+              <div class="feature-icon">🛡️</div>
+              <h3>Privacy Shield</h3>
+              <p>Tracker blocking, anti-fingerprinting, and cleaner cookie handling by default.</p>
             </article>
+
             <article class="feature-card">
-              <div class="icon">⚡</div>
-              <h3>Fast and lightweight</h3>
-              <p>Optimized tab handling, quick rendering, and low resource consumption on every device.</p>
+              <div class="feature-icon">⚡</div>
+              <h3>Fast by Design</h3>
+              <p>Efficient tab handling and lower RAM usage for fluid browsing on every device.</p>
             </article>
+
             <article class="feature-card">
-              <div class="icon">🧠</div>
-              <h3>Smart browsing assistant</h3>
-              <p>Context-aware suggestions, quick searches, and streamlined productivity workflows.</p>
+              <div class="feature-icon">🧠</div>
+              <h3>Smart Productivity</h3>
+              <p>Quick search suggestions, tab grouping, and minimal friction for everyday browsing.</p>
             </article>
+
             <article class="feature-card">
-              <div class="icon">🔒</div>
-              <h3>Secure sync</h3>
-              <p>End-to-end encrypted sync for bookmarks, passwords, history, and settings.</p>
+              <div class="feature-icon">🔒</div>
+              <h3>Secure Sync</h3>
+              <p>Bookmarks, passwords, and settings synced across devices with protection in mind.</p>
             </article>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="security-section" id="security">
-          <div class="section-heading left">
-            <p class="eyebrow">Security stack</p>
-            <h2>Protection that stays active, even when you forget.</h2>
+      <section class="security-section" id="security">
+        <div class="container security-grid">
+          <div class="security-copy">
+            <p class="eyebrow">Security architecture</p>
+            <h2>Protection that works even when you are multitasking.</h2>
+            <p>
+              KryptonBrowser is designed around security-first defaults: safer tabs, suspicious-extension warnings,
+              safer downloads, and better visibility over online threats.
+            </p>
           </div>
 
-          <div class="security-grid">
-            <div class="security-panel">
-              <h3>Active defense</h3>
+          <div class="security-panels">
+            <div class="security-card">
+              <h3>Built-in defense</h3>
               <ul>
                 <li>HTTPS-first browsing</li>
-                <li>Phishing and malware detection</li>
-                <li>Suspicious extension monitoring</li>
-                <li>Context-aware sandboxing</li>
+                <li>Malware and phishing indicators</li>
+                <li>Suspicious extension flags</li>
+                <li>Safer download handling</li>
               </ul>
             </div>
-            <div class="security-panel highlight">
+
+            <div class="security-card highlight">
               <h3>Privacy engine</h3>
               <ul>
                 <li>Tracker blocking by default</li>
-                <li>Third-party cookie isolation</li>
-                <li>Private browsing strengthen mode</li>
-                <li>Session data minimization</li>
+                <li>Cookie isolation controls</li>
+                <li>Fingerprint reduction</li>
+                <li>Private mode hardening</li>
               </ul>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="platforms" id="platforms">
+      <section class="compare-section" id="compare">
+        <div class="container">
           <div class="section-heading">
-            <p class="eyebrow">Cross-platform</p>
-            <h2>One browser experience across every device.</h2>
+            <p class="eyebrow">Why it feels different</p>
+            <h2>Fast, cleaner, and more focused than a typical browser.</h2>
           </div>
 
-          <div class="platform-grid">
-            <div class="platform-item"><span>🪟</span> Windows</div>
-            <div class="platform-item"><span>🐧</span> Linux</div>
-            <div class="platform-item"><span>🍎</span> macOS</div>
-            <div class="platform-item"><span>🤖</span> Android</div>
-            <div class="platform-item"><span>📱</span> iOS</div>
-          </div>
-        </section>
+          <div class="compare-grid">
+            <div class="compare-card">
+              <h3>Chrome-style familiarity</h3>
+              <p>Easy to adopt, fast to learn, and familiar for everyday internet use.</p>
+            </div>
 
-        <section class="download-section" id="download">
+            <div class="compare-card">
+              <h3>Opera-inspired flow</h3>
+              <p>Elegant UI, efficient tab experience, and a polished feel from first launch.</p>
+            </div>
+
+            <div class="compare-card">
+              <h3>Krypton upgrade</h3>
+              <p>More control, stronger security defaults, and a cleaner privacy-first experience.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="download-section" id="download">
+        <div class="container">
           <div class="section-heading">
             <p class="eyebrow">Download</p>
-            <h2>Install KryptonBrowser on your platform.</h2>
+            <h2>Install KryptonBrowser on your device.</h2>
           </div>
 
           <div class="download-grid">
             <a class="download-card" href="#">
-              <span class="os">🪟 Windows</span>
-              <strong>Download .exe</strong>
+              <span>🪟</span>
+              <strong>Windows</strong>
               <small>64-bit installer</small>
             </a>
+
             <a class="download-card" href="#">
-              <span class="os">🐧 Linux</span>
-              <strong>Download .AppImage</strong>
-              <small>Debian / Ubuntu / Fedora</small>
+              <span>🐧</span>
+              <strong>Linux</strong>
+              <small>AppImage / .deb</small>
             </a>
+
             <a class="download-card" href="#">
-              <span class="os">🍎 macOS</span>
-              <strong>Download .dmg</strong>
-              <small>Apple Silicon + Intel</small>
+              <span>🍎</span>
+              <strong>macOS</strong>
+              <small>Intel + Apple Silicon</small>
             </a>
+
             <a class="download-card" href="#">
-              <span class="os">🤖 Android</span>
-              <strong>Google Play</strong>
-              <small>Coming soon</small>
+              <span>🤖</span>
+              <strong>Android</strong>
+              <small>Play Store</small>
             </a>
+
             <a class="download-card" href="#">
-              <span class="os">📱 iOS</span>
-              <strong>App Store</strong>
-              <small>Coming soon</small>
+              <span>📱</span>
+              <strong>iOS</strong>
+              <small>App Store</small>
             </a>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <footer class="footer">
-        <div>KryptonBrowser</div>
-        <div>Secure browsing for modern life.</div>
-      </footer>
-    </div>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">KryptonBrowser</div>
+        <div class="footer-copy">Secure browsing for modern life.</div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>

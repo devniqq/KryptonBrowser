@@ -1,8 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navButton = document.querySelector('.nav-button');
-  const primaryButtons = document.querySelectorAll('.primary-btn, .nav-button');
+  const buttons = document.querySelectorAll('.primary-btn, .secondary-btn, .nav-button');
 
-  primaryButtons.forEach((button) => {
+  buttons.forEach((button) => {
     button.addEventListener('mouseenter', () => {
       button.style.filter = 'brightness(1.04)';
     });
@@ -12,7 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  if (navButton) {
-    navButton.setAttribute('aria-label', 'Download KryptonBrowser');
-  }
+  const cards = document.querySelectorAll('.feature-card, .compare-card, .download-card, .security-card');
+  cards.forEach((card) => {
+    card.addEventListener('mouseenter', () => {
+      card.style.borderColor = 'rgba(103, 164, 255, 0.35)';
+      card.style.boxShadow = '0 18px 38px rgba(9, 17, 28, 0.42)';
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.borderColor = 'rgba(145, 173, 218, 0.18)';
+      card.style.boxShadow = 'none';
+    });
+  });
 });
