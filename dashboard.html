@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login to KryptonBrowser</title>
+    <meta name="description" content="Sign in to KryptonBrowser to sync bookmarks, settings and browsing data." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="auth-page">
+    <div class="auth-shell">
+      <div class="auth-panel">
+        <div class="auth-brand">
+          <span class="brand-mark">K</span>
+          <span>KryptonBrowser</span>
+        </div>
+
+        <h1>Welcome back</h1>
+        <p class="auth-subtitle">Sign in to protect your tabs, bookmarks, and sync settings.</p>
+
+        <form class="auth-form">
+          <label>
+            <span>Email</span>
+            <input type="email" placeholder="you@example.com" />
+          </label>
+
+          <label>
+            <span>Password</span>
+            <input type="password" placeholder="••••••••" />
+          </label>
+
+          <div class="auth-row">
+            <label class="remember-me"><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-btn">Sign in</button>
+        </form>
+
+        <div class="auth-divider"><span>or continue with</span></div>
+
+        <div class="social-row">
+          <button class="social-btn">Google</button>
+          <button class="social-btn">Apple</button>
+        </div>
+
+        <p class="auth-footer">New here? <a href="#">Create account</a></p>
+      </div>
+
+      <div class="promo-panel">
+        <div class="promo-content">
+          <p class="eyebrow">Private by default</p>
+          <h2>Keep your browsing data in your control.</h2>
+          <ul>
+            <li>Encrypted sync</li>
+            <li>Tracker blocking</li>
+            <li>Cross-device protection</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

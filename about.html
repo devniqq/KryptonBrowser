@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KryptonBrowser Dashboard</title>
+    <meta name="description" content="KryptonBrowser dashboard overview for secure browsing performance and settings." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="dashboard-page">
+    <div class="dashboard-shell">
+      <aside class="sidebar">
+        <div class="sidebar-brand">
+          <span class="brand-mark">K</span>
+          <span>Krypton</span>
+        </div>
+
+        <nav class="sidebar-nav">
+          <a class="active" href="#">Overview</a>
+          <a href="#">Activity</a>
+          <a href="#">Privacy</a>
+          <a href="#">Security</a>
+          <a href="#">Settings</a>
+        </nav>
+
+        <div class="sidebar-card">
+          <span>Protection score</span>
+          <strong>93</strong>
+          <small>Excellent</small>
+        </div>
+      </aside>
+
+      <main class="dashboard-main">
+        <header class="dashboard-header">
+          <div>
+            <p class="eyebrow">Overview</p>
+            <h1>Welcome back</h1>
+          </div>
+          <a href="index.html" class="btn btn-primary">Back to site</a>
+        </header>
+
+        <section class="stats-grid">
+          <div class="metric-card">
+            <span>Tabs protected</span>
+            <strong>18</strong>
+            <small>+2 this week</small>
+          </div>
+          <div class="metric-card">
+            <span>Trackers blocked</span>
+            <strong>1.3k</strong>
+            <small>+140 today</small>
+          </div>
+          <div class="metric-card">
+            <span>Memory usage</span>
+            <strong>42%</strong>
+            <small>Optimized</small>
+          </div>
+          <div class="metric-card">
+            <span>Sync status</span>
+            <strong>Secure</strong>
+            <small>5 devices</small>
+          </div>
+        </section>
+
+        <section class="content-grid">
+          <div class="panel-box activity-box">
+            <div class="section-title-row">
+              <h3>Recent activity</h3>
+              <a href="#">View all</a>
+            </div>
+            <ul class="activity-list">
+              <li><span>Threat scan</span><strong>Completed</strong></li>
+              <li><span>Ad block refresh</span><strong>Updated</strong></li>
+              <li><span>Sync check</span><strong>Healthy</strong></li>
+            </ul>
+          </div>
+
+          <div class="panel-box privacy-box">
+            <div class="section-title-row">
+              <h3>Privacy controls</h3>
+              <a href="#">Manage</a>
+            </div>
+            <div class="toggle-list">
+              <div><span>Tracker blocker</span><button class="switch on"></button></div>
+              <div><span>Cookie isolation</span><button class="switch on"></button></div>
+              <div><span>Fingerprint guard</span><button class="switch on"></button></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="bookmark-panel panel-box">
+          <div class="section-title-row">
+            <h3>Quick bookmarks</h3>
+            <a href="#">Open library</a>
+          </div>
+
+          <div class="bookmark-grid">
+            <div class="bookmark-card">
+              <span>🔐</span>
+              <strong>Vault</strong>
+            </div>
+            <div class="bookmark-card">
+              <span>📦</span>
+              <strong>Drive</strong>
+            </div>
+            <div class="bookmark-card">
+              <span>📰</span>
+              <strong>News</strong>
+            </div>
+            <div class="bookmark-card">
+              <span>☁️</span>
+              <strong>Cloud</strong>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

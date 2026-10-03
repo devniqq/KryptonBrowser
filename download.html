@@ -1,30 +1,300 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.btn');
-  buttons.forEach((button) => {
-    button.addEventListener('mouseenter', () => {
-      button.style.filter = 'brightness(1.04)';
-    });
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="KryptonBrowser — secure, privacy-first browser for desktop and mobile." />
+    <title>KryptonBrowser | Secure Web Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="landing-page">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
 
-    button.addEventListener('mouseleave', () => {
-      button.style.filter = 'none';
-    });
-  });
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <a href="index.html" class="brand" aria-label="KryptonBrowser home">
+          <span class="brand-mark">K</span>
+          <span class="brand-text">KryptonBrowser</span>
+        </a>
 
-  const cards = document.querySelectorAll('.feature-card, .compare-card, .pricing-card, .download-card, .security-card, .platform-item');
-  cards.forEach((card) => {
-    card.addEventListener('mouseenter', () => {
-      card.style.borderColor = 'rgba(103, 166, 255, 0.36)';
-      card.style.boxShadow = '0 18px 34px rgba(8, 15, 24, 0.38)';
-    });
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#security">Security</a>
+          <a href="#platforms">Platforms</a>
+          <a href="#pricing">Pricing</a>
+          <a href="download.html">Download</a>
+        </nav>
 
-    card.addEventListener('mouseleave', () => {
-      card.style.borderColor = 'rgba(160, 188, 236, 0.18)';
-      card.style.boxShadow = 'none';
-    });
-  });
-});
+        <div class="nav-actions">
+          <a href="about.html" class="btn btn-ghost">About</a>
+          <a href="login.html" class="btn btn-ghost">Login</a>
+          <a href="download.html" class="btn btn-primary">Get Krypton</a>
+        </div>
+      </div>
+    </header>
 
+    <main>
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="eyebrow">Fast. Private. Built for everyday life.</p>
+          <h1>Secure browsing for a cleaner, smarter internet.</h1>
+          <p class="lead">
+            KryptonBrowser combines the familiarity of Chrome with the polished flow of Opera,
+            while giving users stronger privacy controls, more efficient tabs, and safer browsing defaults.
+          </p>
 
+          <div class="cta-row">
+            <a href="download.html" class="btn btn-primary">Download now</a>
+            <a href="#features" class="btn btn-secondary">Explore features</a>
+          </div>
 
+          <div class="mini-stats">
+            <div>
+              <strong>99.2%</strong>
+              <span>Threat blocking</span>
+            </div>
+            <div>
+              <strong>1.9x</strong>
+              <span>Faster flow</span>
+            </div>
+            <div>
+              <strong>5 OS</strong>
+              <span>Cross-platform</span>
+            </div>
+          </div>
+        </div>
 
+        <div class="hero-visual" aria-label="KryptonBrowser preview interface">
+          <div class="browser-window">
+            <div class="window-bar">
+              <span class="dot red"></span>
+              <span class="dot amber"></span>
+              <span class="dot green"></span>
+            </div>
 
+            <div class="tab-row">
+              <span class="tab active">Krypton</span>
+              <span class="tab">News</span>
+              <span class="tab">Cloud</span>
+            </div>
+
+            <div class="address-bar">kryptonbrowser.com/private</div>
+
+            <div class="browser-grid">
+              <div class="panel large accent-panel">
+                <span class="chip">Private mode</span>
+                <h3>Zero-track browsing</h3>
+                <p>Cleaner pages, less tracking, and more control over your online footprint.</p>
+              </div>
+
+              <div class="panel stat-card">
+                <span class="panel-label">shield</span>
+                <strong>24/7</strong>
+                <small>Threat watch</small>
+              </div>
+
+              <div class="panel stat-card">
+                <span class="panel-label">speed</span>
+                <strong>1.9x</strong>
+                <small>Lower latency</small>
+              </div>
+
+              <div class="panel wide-panel">
+                <span class="panel-label">sync</span>
+                <strong>Cross-device privacy</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature-band" id="features">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why Krypton</p>
+            <h2>Everything you need in a browser without the clutter.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">🛡️</div>
+              <h3>Privacy Shield</h3>
+              <p>Built-in tracker blocking, anti-fingerprinting, and stricter cookie protection.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">⚡</div>
+              <h3>Fast Browsing</h3>
+              <p>Optimized tab handling, lightweight memory use, and smoother page flow.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🧠</div>
+              <h3>Smart Tabs</h3>
+              <p>Focused grouping, intelligence, and easier multitasking without distraction.</p>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🔒</div>
+              <h3>Secure Sync</h3>
+              <p>Bookmarks, passwords, and settings synchronized across all your devices.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="security-section" id="security">
+        <div class="container security-grid">
+          <div class="security-copy">
+            <p class="eyebrow">Security architecture</p>
+            <h2>Protection built into every click.</h2>
+            <p>
+              KryptonBrowser is designed around privacy-first defaults: safer file downloads,
+              smarter phishing detection, extension monitoring, and a stronger anti-tracking experience.
+            </p>
+          </div>
+
+          <div class="security-panels">
+            <div class="security-card">
+              <h3>Built-in defense</h3>
+              <ul>
+                <li>HTTPS-first browsing</li>
+                <li>Suspicious extension warnings</li>
+                <li>Safer file downloads</li>
+                <li>Malware and phishing signals</li>
+              </ul>
+            </div>
+
+            <div class="security-card highlight">
+              <h3>Privacy engine</h3>
+              <ul>
+                <li>Tracker blocking by default</li>
+                <li>Cookie isolation controls</li>
+                <li>Fingerprint reduction</li>
+                <li>Private mode hardening</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="platforms" id="platforms">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Cross-platform</p>
+            <h2>One browser experience across each of your devices.</h2>
+          </div>
+
+          <div class="platform-grid">
+            <div class="platform-item"><span>🪟</span> Windows</div>
+            <div class="platform-item"><span>🐧</span> Linux</div>
+            <div class="platform-item"><span>🍎</span> macOS</div>
+            <div class="platform-item"><span>🤖</span> Android</div>
+            <div class="platform-item"><span>📱</span> iOS</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="compare-section" id="compare">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Why it feels different</p>
+            <h2>Fast, elegant, and more intentional than a standard browser.</h2>
+          </div>
+
+          <div class="compare-grid">
+            <div class="compare-card">
+              <h3>Chrome-style familiarity</h3>
+              <p>Users already know how to work with it, but now with better privacy and cleaner performance.</p>
+            </div>
+            <div class="compare-card">
+              <h3>Opera-inspired flow</h3>
+              <p>Efficient multitasking, elegant design, and a strong focus on productivity across devices.</p>
+            </div>
+            <div class="compare-card">
+              <h3>Krypton upgrade</h3>
+              <p>More control, smarter defaults, and a modern web experience from the very first launch.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section" id="pricing">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Pricing</p>
+            <h2>Choose the plan that fits your browsing style.</h2>
+          </div>
+
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <div class="pricing-top">
+                <p class="plan-name">Free</p>
+                <h3>$0</h3>
+              </div>
+              <ul>
+                <li>Tracker blocking</li>
+                <li>Private browsing</li>
+                <li>Basic sync</li>
+                <li>Standard support</li>
+              </ul>
+              <a href="download.html" class="btn btn-secondary full-width">Download free</a>
+            </div>
+
+            <div class="pricing-card featured-plan">
+              <div class="pricing-top">
+                <p class="plan-name">Pro</p>
+                <h3>$8<span>/mo</span></h3>
+              </div>
+              <ul>
+                <li>Everything in Free</li>
+                <li>Advanced privacy controls</li>
+                <li>Secure cross-device sync</li>
+                <li>Priority support</li>
+              </ul>
+              <a href="download.html" class="btn btn-primary full-width">Try Pro</a>
+            </div>
+
+            <div class="pricing-card">
+              <div class="pricing-top">
+                <p class="plan-name">Business</p>
+                <h3>$19<span>/seat</span></h3>
+              </div>
+              <ul>
+                <li>Team management</li>
+                <li>Shared policy controls</li>
+                <li>Secure admin dashboard</li>
+                <li>Enterprise support</li>
+              </ul>
+              <a href="download.html" class="btn btn-secondary full-width">Contact sales</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section">
+        <div class="container cta-box">
+          <div>
+            <p class="eyebrow">Ready to browse safer?</p>
+            <h2>Take back control of your browser.</h2>
+          </div>
+          <a href="download.html" class="btn btn-primary">Download Krypton</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">KryptonBrowser</div>
+        <div class="footer-copy">Secure browsing for modern life.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
